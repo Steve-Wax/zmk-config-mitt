@@ -1,0 +1,12 @@
+file_format: "1"
+id: mitt
+name: Mitt 
+type: shield
+url: https://github.com/Steve-Wax
+requires: [pro_micro]
+exposes: [power]
+features:
+  - keys
+siblings:
+  - mitt_left
+  - mitt_right
