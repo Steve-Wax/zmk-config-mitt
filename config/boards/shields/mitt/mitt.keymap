@@ -7,8 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/mouse.h>
-
 
 &mt {
     tapping-term-ms = <200>;
@@ -81,13 +79,6 @@
             bindings = <&kp N0>;
 	    layers = <2>; 
         };
-        lclk {
-            timeout-ms = <20>;
-	    key-positions = <22	23>;
-            bindings = <&mkp LCLK>;
-	    layers = <3>;
-        };
-
 
     };
 
