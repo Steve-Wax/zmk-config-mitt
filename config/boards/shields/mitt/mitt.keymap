@@ -55,12 +55,6 @@
             bindings = <&kp SQT>;
 	    layers = <1 5>; 
         };
-	dqt {shift
-            timeout-ms = <20>;
-	    key-positions = <18 19>;
-            bindings = <&kp DQT>;
-	    layers = <1 5>; 
-        };
         bslh {
             timeout-ms = <20>;
 	    key-positions = <12	13>;
