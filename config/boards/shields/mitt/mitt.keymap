@@ -27,51 +27,16 @@
             bindings = <&kp ESC>;
         };
         
-        combo_1 {
+        combo_del {
             timeout-ms = <50>;
-	    key-positions = <26 27>;
-            bindings = <&to 1>;
+	    key-positions = <20 21>;
+            bindings = <&kp DEL>;
         };
         
-        caps {
+        combo_quote {
             timeout-ms = <50>;
-	    key-positions = <24 25>;
-            bindings = <&kp CAPS>;
-        };
-        rshift {
-            timeout-ms = <50>;
-	    key-positions = <16 17>;
-            bindings = <&sk RSHIFT>;
-        };
-        osl {
-            timeout-ms = <50>;
-	    key-positions = <3 5>;
-            bindings = <&sl 5>;
-        };
-        
-        sqt {
-            timeout-ms = <20>;
-	    key-positions = <8 9>;
+	    key-positions = <18 19>;
             bindings = <&kp SQT>;
-	    layers = <1 5>; 
-        };
-        bslh {
-            timeout-ms = <20>;
-	    key-positions = <12	13>;
-            bindings = <&kp BSLH>;
-	    layers = <1>; 
-        };
-        lbkt {
-            timeout-ms = <20>;
-	    key-positions = <22	23>;
-            bindings = <&kp LBKT>;
-	    layers = <1>; 
-        };
-        n0 {
-            timeout-ms = <20>;
-	    key-positions = <22	23>;
-            bindings = <&kp N0>;
-	    layers = <2>; 
         };
 
     };
@@ -86,22 +51,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        hs: homerow_shifts {
+ 
+        en: tapdance {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_SHIFTS";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
-	td: tapdance {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAPDANCE";
+            label = "ENTER-SHIFT";
             #binding-cells = <2>;
             tapping-term-ms = <190>;
             quick_tap_ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
         };
     };
@@ -114,7 +71,7 @@
 		&kp Q		&kp W  	   	&kp E 		&kp R           &kp T						&kp Y    	&kp U    	&kp I                   &kp O           &kp P  
 		&hm LGUI A      &hm LALT S  	&hm LCTL D	&kp F           &kp G    		                        &kp H           &hm RCTL J    	&hm RALT K    		&hm RGUI L 	&kp SEMI
 		&kp Z	 	&kp X 		&kp C 		&kp V 		&kp B        &mt LCTL TAB     	&kp BSPC        &kp N		&kp M  		&kp  COMMA		&kp DOT		&kp SLASH
-          									&mo 1        &mt LSHFT ENTER 	&kp SPACE       &mo 2
+          									&mo 1        &en LSHFT ENTER 	&kp SPACE       &mo 2
 		>;
 		};
 
