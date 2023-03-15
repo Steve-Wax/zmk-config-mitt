@@ -3,6 +3,9 @@
  *
  * SPDX-License-Identifier: MIT
  * Key map for the MIT keyboard designed by Steve
+ * ZX at the same time is delete
+ * QW at the same time is escape
+ * L; at the same time is quote
  */
 
 #include <behaviors.dtsi>
